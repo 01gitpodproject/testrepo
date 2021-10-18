@@ -7,3 +7,6 @@ const  Block = require("./block");
 //console.log(block.toString());
 
 console.log(Block.genesis().toString());
+
+const testBlock = Block.mineBlock(Block.genesis(),"testDaten")
+console.log(testBlock.toString());
